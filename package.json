@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "node serve.mjs",
+    "optimize-images": "node tools/optimize-images.mjs",
+    "build": "npm run optimize-images"
+  },
+  "dependencies": {
+    "puppeteer": "^24.38.0",
+    "sharp": "^0.33.5"
+  }
+}

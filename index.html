@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrenadora Personal en Mar del Plata | Agustina Casentini</title>
+  <meta name="description" content="Entrenamiento personalizado en Mar del Plata. Planes online y presenciales de Full Body, Funcional y Stretching.">
+  <link rel="canonical" href="https://agustinacasentini.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://agustinacasentini.com/">
+  <meta property="og:title"       content="Entrenadora Personal en Mar del Plata | Agustina Casentini">
+  <meta property="og:description" content="Entrenamiento personalizado en Mar del Plata. Planes online y presenciales de Full Body, Funcional y Stretching.">
+  <meta property="og:image"       content="https://agustinacasentini.com/images/og-hero.webp">
+  <meta property="og:locale"      content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Entrenadora Personal en Mar del Plata | Agustina Casentini">
+  <meta name="twitter:description" content="Entrenamiento personalizado en Mar del Plata. Planes online y presenciales de Full Body, Funcional y Stretching.">
+  <meta name="twitter:image"       content="https://agustinacasentini.com/images/og-hero.webp">
+
+  <!-- PWA -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#FF5480">
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="./images/hero-agustina.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Agustina Casentini — Entrenadora Personal",
+    "description": "Entrenamiento personalizado online y presencial en Mar del Plata. Full Body, Funcional y Stretching.",
+    "url": "https://agustinacasentini.com/",
+    "telephone": "+5491121918674",
+    "areaServed": ["Mar del Plata", "Argentina"],
+    "priceRange": "$$",
+    "sameAs": ["https://www.instagram.com/professora.agustina/"]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué incluye el plan online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El plan online incluye una rutina personalizada según tus objetivos y nivel, seguimiento semanal, ajustes según tu progreso y soporte por WhatsApp para todas tus consultas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Quién puede entrenar con Agustina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cualquier persona. Trabajo con principiantes y avanzadas, adaptando cada plan al nivel y posibilidades de cada alumna. No necesitás experiencia previa para empezar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo funciona el entrenamiento online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Coordinamos sesiones en vivo por videollamada o te envío rutinas grabadas. Siempre con seguimiento personalizado y comunicación constante por WhatsApp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito equipamiento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No necesariamente. Diseño rutinas adaptadas a lo que tenés disponible: sin equipamiento, con elementos del hogar, o en el gimnasio. Vos decidís."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo empezar sin experiencia previa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutamente. Trabajo con principiantes con mucha frecuencia. El plan se adapta completamente a tu punto de partida y avanzamos a tu ritmo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo inicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es muy sencillo: escribime por WhatsApp o completá el formulario de contacto. Coordinamos una consulta inicial sin cargo para conocernos y definir el mejor plan para vos."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════ NAV ══ -->
+<nav class="nav" id="mainNav">
+  <a href="#" class="nav-logo">Agustina Casentini</a>
+  <button type="button" class="menu-btn" id="menuBtn" aria-controls="menuOverlay" aria-expanded="false">MENÚ</button>
+</nav>
+
+<!-- MENU OVERLAY -->
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+  <button type="button" class="menu-close" id="menuClose" aria-label="Cerrar menú">✕</button>
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#galeria">Galería</a>
+  <a href="#faq">Preguntas</a>
+  <a href="#contacto">Contacto</a>
+</div>
+
+<main>
+
+<!-- ══════════════════════════════════ HERO ══ -->
+<section class="hero">
+  <picture class="hero-photo">
+    <source type="image/avif" srcset="./images/hero-agustina.avif">
+    <source type="image/webp" srcset="./images/hero-agustina.webp">
+    <img class="hero-img"
+         src="./brand_assets/3c31ecc1-6b39-4fa7-b15e-19a565c2cced.png"
+         alt="Agustina Casentini – Entrenadora Personal en Mar del Plata"
+         fetchpriority="high" decoding="async" width="1920" height="1080">
+  </picture>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-tag fi">
+        <span class="hero-tag-dot"></span>
+        <span>Profesora de Educación Física · @professora.agustina</span>
+      </div>
+      <h1 class="hero-h1 fi fi-d1">PONTE FIT.</h1>
+      <p class="hero-sub fi fi-d2">Tu mejor versión</p>
+    </div>
+    <div class="hero-right fi fi-d3">
+      <p class="hero-desc">Transformá tu cuerpo y mente con planes personalizados, online y/o presenciales.</p>
+      <a href="#contacto" class="btn-white">
+        Empezá tu camino
+        <span class="btn-circle">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ ABOUT ══ -->
+<section class="about-section" id="sobre-mi">
+  <div class="about-inner">
+    <h2 class="about-heading fi fi-d1">Entrenadora personal.</h2>
+    <p class="about-desc fi fi-d2">Soy profesora de Educación Física y entrenadora personal especializada en entrenamiento funcional. Me apasiona acompañar a cada persona en su proceso de transformación, respetando sus tiempos y potenciando sus capacidades.</p>
+
+    <div class="trainer-carousel fi fi-d3">
+      <button type="button" class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Anterior">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <div class="trainer-card active" data-idx="0">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Entrenadora personal.webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Entrenadora personal.jpg"
+               alt="Agustina Casentini – Entrenadora Personal en Mar del Plata"
+               loading="lazy" decoding="async" width="380" height="520">
+        </picture>
+        <div class="trainer-card-info">
+          <div>
+            <div class="trainer-card-name">Entrenadora personal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trainer-card next" data-idx="1">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Full Body Cardio 100% online.webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Full Body Cardio 100% online.jpg"
+               alt="Clases full body cardio 100% online en vivo"
+               loading="lazy" decoding="async" width="380" height="520">
+        </picture>
+        <div class="trainer-card-info">
+          <div>
+            <div class="trainer-card-name">Clases full body cardio 100% Online en vivo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trainer-card hidden" data-idx="2">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Planes online.webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Planes online.jpg"
+               alt="Planes de entrenamiento online personalizados"
+               loading="lazy" decoding="async" width="380" height="520">
+        </picture>
+        <div class="trainer-card-info">
+          <div>
+            <div class="trainer-card-name">Planes de entrenamiento Online</div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="carousel-arrow carousel-next" id="carouselNext" aria-label="Siguiente">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ STATS ══ -->
+<section class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-col fi">
+      <div class="stat-num grad" data-target="40" data-suffix="+">0+</div>
+      <div class="stat-label">Alumnos acompañados</div>
+    </div>
+    <div class="stat-col fi fi-d1">
+      <div class="stat-num grad-v" data-target="100" data-suffix="%">0%</div>
+      <div class="stat-label">Planes personalizados</div>
+    </div>
+    <div class="stat-col fi fi-d2">
+      <div class="stat-num grad-o" data-target="15" data-suffix="+">0+</div>
+      <div class="stat-label">Años de experiencia</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ GALLERY ══ -->
+<section class="gallery-section" id="galeria">
+  <div class="gallery-header fi">
+    <p class="label">ASÍ ENTRENAMOS</p>
+    <h2 class="gallery-heading">Personas Reales. <span class="grad">Resultados Reales.</span></h2>
+  </div>
+  <div class="gallery-track-wrap">
+    <div class="gallery-track" id="galleryTrack">
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini03.webp"  alt="Entrenamiento funcional en Mar del Plata" loading="lazy" decoding="async" width="300" height="420"></div>
+      <div class="gallery-slide"><picture><source srcset="fotos/optimizadas/webp/del carrete, reemplazar la segunda por esta.webp" type="image/webp"><img src="fotos/optimizadas/jpg/del carrete, reemplazar la segunda por esta.jpg" alt="Entrenamiento con Agustina Casentini" loading="lazy" decoding="async" width="300" height="420"></picture></div>
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini05.webp"  alt="Sesión de entrenamiento personalizado" loading="lazy" decoding="async" width="300" height="420"></div>
+      <div class="gallery-slide"><picture><source srcset="fotos/optimizadas/webp/del carrete, reemplazar la 4 por esta.webp" type="image/webp"><img src="fotos/optimizadas/jpg/del carrete, reemplazar la 4 por esta.jpg" alt="Entrenamiento con Agustina Casentini" loading="lazy" decoding="async" width="300" height="420"></picture></div>
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini07.webp"  alt="Entrenamiento presencial en Mar del Plata" loading="lazy" decoding="async" width="300" height="420"></div>
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini08.webp"  alt="Clase de entrenamiento funcional" loading="lazy" decoding="async" width="300" height="420"></div>
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini09.webp"  alt="Sesión de stretching y movilidad" loading="lazy" decoding="async" width="300" height="420"></div>
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini10.webp"  alt="Rutina de movilidad articular guiada" loading="lazy" decoding="async" width="300" height="420"></div>
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini011.webp" alt="Entrenamiento online en vivo" loading="lazy" decoding="async" width="300" height="420"></div>
+      <div class="gallery-slide"><picture><source srcset="fotos/optimizadas/webp/del carrete, reemplazar la anteultima por esta.webp" type="image/webp"><img src="fotos/optimizadas/jpg/del carrete, reemplazar la anteultima por esta.jpg" alt="Entrenamiento con Agustina Casentini" loading="lazy" decoding="async" width="300" height="420"></picture></div>
+      <div class="gallery-slide"><img src="./brand_assets/agustinacasentini014.webp" alt="Seguimiento y progreso de alumnos" loading="lazy" decoding="async" width="300" height="420"></div>
+    </div>
+  </div>
+  <div class="gallery-controls">
+    <button type="button" class="g-arrow" id="galleryPrev" aria-label="Anterior">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="g-dots" id="galleryDots"></div>
+    <button type="button" class="g-arrow" id="galleryNext" aria-label="Siguiente">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ SERVICES ══ -->
+<section class="services-section" id="servicios">
+  <div class="services-inner">
+    <div class="services-intro fi">
+      <p class="label">PROGRAMA DE ENTRENAMIENTO</p>
+      <h2 class="services-heading">Tus Objetivos. <span class="grad">Tu Plan.</span></h2>
+    </div>
+
+    <!-- Full Body -->
+    <div class="svc-item fi">
+      <div class="svc-text">
+        <h3 class="svc-name">Full Body Cardio 100% Online</h3>
+        <p class="svc-desc">Entrenamiento integral donde entrenamos juntos en vivo, teniendo en cuenta lo que vos necesitas. Tus días, tus horarios, desde casa.</p>
+        <div class="check-list">
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Ejercitá todo tu cuerpo en una sola sesión
+          </div>
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Acelerá tu metabolismo
+          </div>
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            No necesitas tener experiencia previa
+          </div>
+        </div>
+      </div>
+      <div class="svc-photo">
+        <img src="./brand_assets/agustinacasentini06.webp"
+             alt="Rutina full body guiada por entrenadora personal en Mar del Plata"
+             loading="lazy" decoding="async" width="320" height="420">
+      </div>
+    </div>
+
+    <!-- Plan Digital Mensual -->
+    <div class="svc-item reverse fi">
+      <div class="svc-text">
+        <h3 class="svc-name">Plan de entrenamiento Digital Mensual</h3>
+        <p class="svc-desc">Planes de entrenamiento que se adaptan a vos y no al revés. Para que dejes de improvisar cada vez que vas al gimnasio.</p>
+        <div class="check-list">
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Planes de entrenamiento con app.
+          </div>
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Seguimiento semanal.
+          </div>
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Progreso asegurado.
+          </div>
+        </div>
+      </div>
+      <div class="svc-photo">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Foto testimonio Dolores.webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Foto testimonio Dolores.jpg"
+               alt="Plan de entrenamiento digital mensual personalizado"
+               loading="lazy" decoding="async" width="320" height="420">
+        </picture>
+      </div>
+    </div>
+
+    <!-- Entrenamiento Presencial -->
+    <div class="svc-item fi">
+      <div class="svc-text">
+        <h3 class="svc-name">Entrenamiento presencial personal en Mar del Plata</h3>
+        <p class="svc-desc">Un profesional te está esperando para que des lo mejor de vos en cada sesión, te cuido y me aseguro que el progreso sea medido.</p>
+        <div class="check-list">
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Entrenamiento en tu domicilio / Gym / Espacio verde
+          </div>
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Corrección de técnica en tiempo real.
+          </div>
+          <div class="check-row">
+            <div class="check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Motivación asegurada.
+          </div>
+        </div>
+      </div>
+      <div class="svc-photo">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Foto con herramienta.webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Foto con herramienta.jpg"
+               alt="Entrenamiento presencial personal en Mar del Plata"
+               loading="lazy" decoding="async" width="320" height="420">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- "Diseñado para vos" -->
+<section class="designed-section fi">
+  <div class="designed-inner">
+    <p class="designed-pre">Sin importar tu punto de partida, tengo un plan</p>
+    <h2 class="designed-heading grad">Diseñado para vos.</h2>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ CTA ══ -->
+<section class="cta-band fi">
+  <div class="cta-band-inner">
+    <p>Elegí el plan que se adapta a tus objetivos y dejá que te guíe cada paso del camino.</p>
+    <a href="#contacto" class="btn-pink">
+      Empezar ahora
+      <span class="btn-circle">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ ARTICLE DARK ══ -->
+<section class="article-dark">
+  <picture class="article-dark-img">
+    <source srcset="fotos/optimizadas/webp/mas fuerte cada dia.webp" type="image/webp">
+    <img src="fotos/optimizadas/jpg/mas fuerte cada dia.jpg"
+         alt="El entrenamiento más fuerte cada día"
+         loading="lazy" decoding="async">
+  </picture>
+  <div class="article-content">
+    <p class="label article-dark-label">ENTRENAMIENTO</p>
+    <h2 class="article-dark-h2">Más fuerte<br>cada día.</h2>
+    <p class="article-dark-p">El entrenamiento consciente, la técnica correcta y los ejercicios adecuados SÍ hacen la diferencia</p>
+    <a href="#contacto" class="article-link">
+      Contactar ahora
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ PLANES ══ -->
+<section class="plans-section">
+  <div class="plans-inner">
+    <div class="fi">
+      <p class="label">PLANES</p>
+      <h2 class="plans-heading">Entrená conmigo y asegurate de <span class="grad">hacerlo correctamente</span></h2>
+      <p class="plans-sub">No importa en qué parte del mundo te encuentres, no busques excusas y ¡entrená!</p>
+    </div>
+    <div class="plans-grid">
+      <!-- Plan 1: Full Body Cardio -->
+      <div class="plan-card fi fi-d1">
+        <div class="plan-label">ONLINE</div>
+        <div class="plan-name">Plan Full Body Cardio</div>
+        <div class="plan-features">
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Hace clases en vivo estés donde estés</div>
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Días y horarios a combinar con la profe, entrenás desde casa</div>
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Trabajás en una sesión todo el cuerpo</div>
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Disponible para todo el mundo</div>
+        </div>
+        <a href="https://wa.me/5491121918674" target="_blank" rel="noopener noreferrer" class="btn-gray btn-full">
+          Consultar
+          <span class="btn-circle btn-circle-dark">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Plan 2: Planificaciones (destacado) -->
+      <div class="plan-card featured fi fi-d2">
+        <div class="plan-badge">MÁS POPULAR</div>
+        <div class="plan-label">ONLINE</div>
+        <div class="plan-name">Planificaciones de entrenamiento</div>
+        <div class="plan-features">
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Planes de entrenamiento con aplicación virtual</div>
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Se renuevan mensualmente, con seguimiento semanal</div>
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Una aplicación te asiste con videos cortos y simples</div>
+        </div>
+        <a href="https://wa.me/5491121918674" target="_blank" rel="noopener noreferrer" class="btn-pink btn-full">
+          Consultar
+          <span class="btn-circle">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Plan 3: Presencial -->
+      <div class="plan-card fi fi-d3">
+        <div class="plan-label">PRESENCIAL EN MAR DEL PLATA</div>
+        <div class="plan-name">Entrenate conmigo y asegurate de hacerlo correctamente</div>
+        <div class="plan-features">
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>En tu hogar, gimnasio o espacio verde</div>
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Correcciones y motivación que solo un profesional puede brindarte</div>
+          <div class="plan-feat"><div class="plan-feat-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FF5480" stroke-width="3.5"><polyline points="20 6 9 17 4 12"/></svg></div>Si vivís por barrios Chauvin, Los Troncos, Stella Maris, este plan es para vos</div>
+        </div>
+        <a href="https://wa.me/5491121918674" target="_blank" rel="noopener noreferrer" class="btn-gray btn-full">
+          Consultar
+          <span class="btn-circle btn-circle-dark">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ HOW IT WORKS ══ -->
+<section class="how-section">
+  <div class="how-inner">
+    <div class="fi">
+      <p class="label">CÓMO FUNCIONA</p>
+      <h2 class="how-heading">Tu Camino <span class="grad">Fitness.</span></h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-card how-card-1 fi fi-d1">
+        <div class="how-card-top">
+          <span class="how-num">01</span>
+          <div class="how-card-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+        <div>
+          <div class="how-title">Elegís tu Plan</div>
+          <div class="how-sub">Online o presencial, vos elegís cómo y desde dónde entrenar</div>
+        </div>
+      </div>
+
+      <div class="how-card how-card-2 fi fi-d2">
+        <div class="how-card-top">
+          <span class="how-num">02</span>
+          <div class="how-card-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+        <div>
+          <div class="how-title">Plan a tu Medida</div>
+          <div class="how-sub">Armo tu planificación según tus objetivos, disponibilidad y nivel. Nada genérico, todo pensado para vos</div>
+        </div>
+      </div>
+
+      <div class="how-card how-card-3 fi fi-d3">
+        <div class="how-card-top">
+          <span class="how-num">03</span>
+          <div class="how-card-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+        <div>
+          <div class="how-title">Entrenamos Juntos</div>
+          <div class="how-sub">Nunca entrenás solo. Sesiones en vivo, seguimiento y soporte forman parte. Sentite acompañado en este proceso de transformación</div>
+        </div>
+      </div>
+
+      <div class="how-card how-card-4 fi fi-d4">
+        <div class="how-card-top">
+          <span class="how-num">04</span>
+          <div class="how-card-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+        <div>
+          <div class="how-title">Ves los Resultados</div>
+          <div class="how-sub">Progreso medible, ajustes según tu evolución y una versión más fuerte y sana de vos mismo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════ FAQ ══ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-photo fi">
+      <picture>
+        <source srcset="fotos/optimizadas/webp/¿preguntas, tengo respuestas.webp" type="image/webp">
+        <img src="fotos/optimizadas/jpg/¿preguntas, tengo respuestas.jpg"
+             alt="Agustina Casentini – ¿Preguntas? Tengo respuestas."
+             loading="lazy" decoding="async" width="380" height="540">
+      </picture>
+    </div>
+    <div class="faq-content">
+      <p class="label fi">PREGUNTAS FRECUENTES</p>
+      <h2 class="faq-heading fi fi-d1">¿Preguntas? <span class="grad">Tengo respuestas.</span></h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">¿Qué incluye el plan Full Body Cardio Online? <span class="faq-icon">+</span></button>
+          <div class="faq-body">Sesiones en vivo 100% online estés donde estés. Entrenás conmigo en directo, de pies a cabeza. Días y horarios a combinar.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">¿Quién puede entrenar con Agustina? <span class="faq-icon">+</span></button>
+          <div class="faq-body">¡Cualquier persona! Trabajo con principiantes y avanzados, adaptando cada plan al nivel y posibilidades de cada alumno. No necesitás experiencia previa para empezar.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">A mí me gusta entrenar sola/o en el gimnasio... ¿puedo solicitar un plan de entrenamiento? <span class="faq-icon">+</span></button>
+          <div class="faq-body">¡Claro! Las planificaciones mensuales con seguimiento semanal son ideales para aquellos/as que les gusta entrenar solos, acomodarse con sus días y horarios y quieren dejar de improvisar cada vez que van a una sala de musculación.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">¿Puedo empezar a entrenar sin experiencia previa? <span class="faq-icon">+</span></button>
+          <div class="faq-body">¡Sí podés! Nunca es tarde para comenzar el camino de sentirte una persona fuerte y de una vez tomar las riendas de tu salud.</div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">¿Cómo inicio? <span class="faq-icon">+</span></button>
+          <div class="faq-body">Es muy sencillo: escribime por WhatsApp o completá el formulario de contacto. Coordinamos una consulta inicial sin cargo para conocernos y definir el mejor plan para vos.</div>
+        </div>
+      </div>
+      <p style="font-size:15px; color:var(--body); line-height:1.7; margin-top:32px;">Seleccioná el plan que más se adapte a tu presente o enviame una consulta directa por medio del formulario que te dejo más abajo</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ TESTIMONIALS ══ -->
+<section class="testi-section">
+  <div class="testi-inner">
+    <p class="label label-center fi">TESTIMONIOS</p>
+    <h2 class="testi-heading fi fi-d1">Lo que dicen <span class="grad">mis alumnos.</span></h2>
+
+    <div class="testi-cards fi fi-d3">
+      <div class="testi-vcard">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Foto testimonio Claire.webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Foto testimonio Claire.jpg"
+               alt="Claire Chavériat – reseña Google Agustina Casentini"
+               loading="lazy" decoding="async" width="400" height="533">
+        </picture>
+        <div class="testi-vcard-overlay"></div>
+        <div class="testi-vcard-info">
+          <div class="testi-vcard-name">Claire Chavériat</div>
+          <div class="testi-vcard-loc">Reseña Google</div>
+        </div>
+        <div class="testi-play" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF5480"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+      </div>
+      <div class="testi-vcard">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Foto testimonio Sebastian (2).webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Foto testimonio Sebastian (2).jpg"
+               alt="Sebastian Scorza – reseña Google Agustina Casentini"
+               loading="lazy" decoding="async" width="400" height="533">
+        </picture>
+        <div class="testi-vcard-overlay"></div>
+        <div class="testi-vcard-info">
+          <div class="testi-vcard-name">Sebastian Scorza</div>
+          <div class="testi-vcard-loc">Reseña Google</div>
+        </div>
+        <div class="testi-play" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF5480"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+      </div>
+      <div class="testi-vcard">
+        <picture>
+          <source srcset="fotos/optimizadas/webp/Foto Gretel.webp" type="image/webp">
+          <img src="fotos/optimizadas/jpg/Foto Gretel.jpg"
+               alt="Gretel – reseña Google Agustina Casentini"
+               loading="lazy" decoding="async" width="400" height="533">
+        </picture>
+        <div class="testi-vcard-overlay"></div>
+        <div class="testi-vcard-info">
+          <div class="testi-vcard-name">Gretel</div>
+          <div class="testi-vcard-loc">Reseña Google</div>
+        </div>
+        <div class="testi-play" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF5480"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-trust fi">
+      <div class="testi-trust-stars">★★★★★</div>
+      <div class="testi-trust-text"><span class="testi-trust-bold">Excelente 5.0</span> de 5</div>
+    </div>
+
+    <div class="testi-text-row fi fi-d1">
+      <div class="testi-tcard">
+        <div class="testi-tcard-stars">★★★★★</div>
+        <p class="testi-tcard-quote">"Trabajo con Agustina remotamente a través de rutinas con ajustes mensuales. No es el primer personal trainer con quien trabajo pero puedo decir que es la primera vez que en 2 meses, veo cambios significativos en mi cuerpo, mi fuerza y resistencia. Agustina me brinda un seguimiento muy cercano a diario después de cada rutina hecha. Entendió perfectamente mis necesidades y limites. Siento en mi cuerpo y veo en mis resultados que el soporte que me brinda es 100% personalizado y adaptado a mí. Se la recomiendo a cualquier persona que quiera entrenar en serio."</p>
+        <div class="testi-tcard-name">Claire Chavériat</div>
+        <div class="testi-tcard-loc">Google ★★★★★</div>
+      </div>
+      <div class="testi-tcard">
+        <div class="testi-tcard-stars">★★★★★</div>
+        <p class="testi-tcard-quote">"Hago clases en formato Online con la profe Agus! Me encantan...son mi cable a tierra y encima desde la comodidad de mi casa! Entrenamos con bandas elásticas y pesitas. La profe es súper flexible con tema horarios y dias! Gracias Profe!"</p>
+        <div class="testi-tcard-name">Sebastian Scorza</div>
+        <div class="testi-tcard-loc">Google ★★★★★</div>
+      </div>
+      <div class="testi-tcard">
+        <div class="testi-tcard-stars">★★★★★</div>
+        <p class="testi-tcard-quote">"Excelente profesional! muy dedicada, sus clases son siempre distintas y a poco mas de un mes ya veo cambios"</p>
+        <div class="testi-tcard-name">Gretel</div>
+        <div class="testi-tcard-loc">Google ★★★★★</div>
+      </div>
+    </div>
+
+    <div class="testi-cta fi" style="text-align:center;margin-top:40px;">
+      <a href="https://www.google.com/maps/search/Agustina+Casentini+entrenadora+Mar+del+Plata" target="_blank" rel="noopener noreferrer" class="btn-gray">
+        Ver todos los testimonios
+        <span class="btn-circle btn-circle-dark">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ MANIFESTO ══ -->
+<section class="manifesto-section">
+  <div class="manifesto-inner fi">
+    <h2 class="manifesto-heading">Más que Entrenar<br>— <span class="grad">Un Estilo de Vida.</span></h2>
+    <div class="manifesto-text">
+      <p>Ser una persona Fitness significa llevar un estilo de vida activo, donde el ejercicio forma parte de la rutina diaria. Implica cuidar tu cuerpo y la salud, combinando entrenamiento, alimentación equilibrada y descanso. Se trata de sentirse fuerte, con más energía y bienestar en el día a día.</p>
+      <p>En cada sesión trabajo con un enfoque holístico: entrenamiento bien diseñado, movimiento con criterio y acompañamiento real. Porque el verdadero cambio no es solo físico — es mental y emocional. Y en ese camino, no estás solo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ CONTACT ══ -->
+<section class="contact-section" id="contacto">
+  <div class="contact-inner">
+    <div class="contact-left fi">
+      <h2 class="contact-heading"><span class="grad">Escribime</span> para consejos, consultas y planes.</h2>
+      <p class="contact-sub">Mandame tu email y te cuento todo sobre cómo trabajamos juntos.</p>
+      <div class="newsletter-row">
+        <input type="email" class="newsletter-input" placeholder="tu@email.com" aria-label="Tu email">
+        <a href="https://wa.me/5491121918674" target="_blank" rel="noopener noreferrer" class="btn-pink">
+          Escribir
+          <span class="btn-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+      </div>
+      <p class="contact-wa">O escribime directamente al <a href="https://wa.me/5491121918674" class="contact-wa-link">WhatsApp</a></p>
+    </div>
+
+    <div class="contact-right fi fi-d2">
+      <div class="contact-form-wrap">
+        <h3 class="contact-form-title">Mandame tu consulta</h3>
+        <p class="contact-form-desc">Te respondo dentro de las 24 horas hábiles.</p>
+        <form id="contactForm" class="contact-form">
+          <input type="hidden" name="access_key" value="6f1406ab-35c0-49eb-991e-295291e18077">
+          <input type="hidden" name="subject"    value="Nueva consulta desde agustinacasentini.com">
+          <input type="hidden" name="from_name"  value="Sitio Agustina Casentini">
+          <input type="hidden" name="botcheck"   value="">
+          <div><label class="form-label" for="contact-name">Nombre</label><input id="contact-name" class="form-input" type="text" name="name" placeholder="Tu nombre completo" required></div>
+          <div><label class="form-label" for="contact-email">Email</label><input id="contact-email" class="form-input" type="email" name="email" placeholder="tu@email.com" required></div>
+          <div>
+            <label class="form-label" for="contact-tipo">Tipo de consulta</label>
+            <select id="contact-tipo" class="form-input" name="tipo_consulta">
+              <option value="" disabled selected>Seleccioná una opción</option>
+              <option value="full-body-cardio">Full Body Cardio 100% Online</option>
+              <option value="plan-digital">Plan de Entrenamiento Digital</option>
+              <option value="presencial">Entrenamiento Presencial</option>
+            </select>
+          </div>
+          <div><label class="form-label" for="contact-msg">Mensaje</label><textarea id="contact-msg" class="form-input" name="message" placeholder="Contame sobre tus objetivos..." rows="3"></textarea></div>
+          <button type="submit" id="submitBtn" class="btn-pink btn-submit">Enviar consulta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════════════ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Agustina Casentini</div>
+      <div class="footer-tagline">Entrenadora Personal · Mar del Plata</div>
+    </div>
+    <div>
+      <div class="footer-sitemap-label">SITEMAP</div>
+      <div class="footer-links">
+        <a href="#sobre-mi"  class="footer-link">Sobre mí</a>
+        <a href="#servicios" class="footer-link">Servicios</a>
+        <a href="#galeria"   class="footer-link">Galería</a>
+        <a href="#faq"       class="footer-link">Preguntas frecuentes</a>
+        <a href="#contacto"  class="footer-link">Contacto</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-sitemap-label">REDES</div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/professora.agustina/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+        <a href="https://wa.me/5491121918674" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2025 Agustina Casentini</div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" aria-hidden="true">
+  <button type="button" id="lightboxClose" aria-label="Cerrar">✕</button>
+  <button type="button" class="lb-arrow" id="lbPrev" aria-label="Imagen anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <img id="lightboxImg" alt="">
+  <button type="button" class="lb-arrow" id="lbNext" aria-label="Imagen siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
