@@ -498,7 +498,7 @@ textarea.form-input { resize: vertical; }
 .footer-link { font-size: 14px; color: var(--body); transition: color 0.2s; }
 .footer-link:hover { color: var(--pink); }
 .footer-copy { font-size: 13px; color: #aaa; align-self: flex-end; }
-.footer-designed { width: 100%; text-align: center; font-size: 12px; color: #666; margin-top: 24px; padding-top: 16px; border-top: 1px solid #2a2a2a; }
+.footer-designed { width: 100%; text-align: center; font-size: 12px; color: #666; margin-top: 24px; padding-top: 16px; border-top: 1px solid #444; }
 .footer-designed a { color: #888; text-decoration: none; transition: color 0.2s; }
 .footer-designed a:hover { color: var(--pink); }
 
