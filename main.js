@@ -92,7 +92,7 @@ if (nav) {
   const nextBtn = document.getElementById('carouselNext');
   if (!cards.length || !prevBtn || !nextBtn) return;
 
-  let cur = 1;
+  let cur = 0;
 
   function updateCards() {
     cards.forEach((c, i) => {
@@ -107,18 +107,16 @@ if (nav) {
   prevBtn.addEventListener('click', () => { cur = (cur - 1 + cards.length) % cards.length; updateCards(); });
   nextBtn.addEventListener('click', () => { cur = (cur + 1) % cards.length; updateCards(); });
 
-  // Click card: prev/next → navigate; active → lightbox
-  const lb    = document.getElementById('lightbox');
-  const lbImg = document.getElementById('lightboxImg');
+  // Click card: prev/next → navigate; active → lightbox con las 3 fotos del carrusel
   cards.forEach(card => {
     card.addEventListener('click', () => {
       if (card.classList.contains('prev')) {
         cur = (cur - 1 + cards.length) % cards.length; updateCards();
       } else if (card.classList.contains('next')) {
         cur = (cur + 1) % cards.length; updateCards();
-      } else if (card.classList.contains('active') && lb && lbImg) {
-        const img = card.querySelector('img');
-        if (img) { lbImg.src = img.src; lb.classList.add('open'); }
+      } else if (card.classList.contains('active')) {
+        const carouselImgs = cards.map(c => c.querySelector('img')).filter(Boolean);
+        if (window.openLightbox) window.openLightbox(carouselImgs, cur, card.querySelector('img'));
       }
     });
   });
@@ -141,13 +139,15 @@ if (nav) {
   let VISIBLE = getVisible(), cur = 0, pages = 1;
 
   function getVisible() { return window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 4; }
-  function calcPages()  { pages = Math.max(1, slides.length - VISIBLE + 1); }
+  function calcPages()  { pages = Math.max(1, slides.length - VISIBLE + 1 - 2); }
 
   function buildDots() {
     dotsEl.innerHTML = '';
     for (let i = 0; i < pages; i++) {
       const d = document.createElement('div');
-      d.className = 'g-dot' + (i === 0 ? ' active' : '');
+      d.className = 'g-dot';
+      // Solo el dot 0 empieza visible
+      d.style.display = i === 0 ? '' : 'none';
       d.setAttribute('role', 'button');
       d.setAttribute('aria-label', `Ir a imagen ${i + 1}`);
       d.addEventListener('click', () => goTo(i));
@@ -155,18 +155,39 @@ if (nav) {
     }
   }
 
-  function goTo(idx) {
-    cur = Math.max(0, Math.min(idx, pages - 1));
-    const vp    = track.parentElement.offsetWidth;
-    const slideW = (vp - GAP * (VISIBLE - 1)) / VISIBLE;
-    track.style.transform = `translateX(-${cur * (slideW + GAP)}px)`;
-    dotsEl.querySelectorAll('.g-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
-    prevBtn.style.opacity = cur === 0 ? '0.35' : '1';
-    nextBtn.style.opacity = cur === pages - 1 ? '0.35' : '1';
+  function updateDots() {
+    const dotEls = dotsEl.querySelectorAll('.g-dot');
+    dotEls.forEach((d, i) => {
+      // Mostrar solo dots hasta la posición actual (sin puntos futuros)
+      d.style.display = i <= cur ? '' : 'none';
+      d.classList.toggle('active', i === cur);
+    });
   }
 
-  prevBtn.addEventListener('click', () => goTo(cur - 1));
-  nextBtn.addEventListener('click', () => goTo(cur + 1));
+  function goTo(idx) {
+    cur = Math.max(0, Math.min(idx, pages - 1));
+
+    const vp      = track.parentElement.offsetWidth;
+    const slideW  = (vp - GAP * (VISIBLE - 1)) / VISIBLE;
+    const maxShift = Math.max(0, slides.length * (slideW + GAP) - GAP - vp);
+    const shift    = Math.min(cur * (slideW + GAP), maxShift);
+
+    track.style.transform = `translateX(-${shift}px)`;
+    updateDots();
+
+    const atStart = cur === 0;
+    const atEnd   = cur >= pages - 1;
+
+    prevBtn.disabled         = atStart;
+    nextBtn.disabled         = atEnd;
+    prevBtn.style.opacity    = atStart ? '0.25' : '1';
+    nextBtn.style.opacity    = atEnd   ? '0.25' : '1';
+    prevBtn.style.cursor     = atStart ? 'default' : 'pointer';
+    nextBtn.style.cursor     = atEnd   ? 'default' : 'pointer';
+  }
+
+  prevBtn.addEventListener('click', () => { if (!prevBtn.disabled) goTo(cur - 1); });
+  nextBtn.addEventListener('click', () => { if (!nextBtn.disabled) goTo(cur + 1); });
   calcPages(); buildDots(); goTo(0);
 
   window.addEventListener('resize', () => {
@@ -230,7 +251,7 @@ if (nav) {
   });
 })();
 
-// ── Lightbox (focus trap + restore focus) ─────────────
+// ── Lightbox (context-aware: carrusel o galería) ──────
 (function () {
   const lb      = document.getElementById('lightbox');
   const lbImg   = document.getElementById('lightboxImg');
@@ -239,8 +260,7 @@ if (nav) {
   const lbNext  = document.getElementById('lbNext');
   if (!lb || !lbImg) return;
 
-  const imgs = Array.from(document.querySelectorAll('.gallery-slide img'));
-  let cur = 0, lastFocus = null;
+  let imgs = [], cur = 0, lastFocus = null;
 
   function show(i) {
     if (!imgs.length) return;
@@ -259,7 +279,21 @@ if (nav) {
     if (lastFocus) lastFocus.focus();
   }
 
-  imgs.forEach((img, i) => img.addEventListener('click', () => { lastFocus = img; show(i); }));
+  // API pública: carrusel la llama con su propio array de imágenes
+  window.openLightbox = function(imageArray, startIndex, focusEl) {
+    imgs = imageArray;
+    lastFocus = focusEl || null;
+    show(startIndex);
+  };
+
+  // Galería: abre con sus propias imágenes
+  const galleryImgs = Array.from(document.querySelectorAll('.gallery-slide img'));
+  galleryImgs.forEach((img, i) => img.addEventListener('click', () => {
+    lastFocus = img;
+    imgs = galleryImgs;
+    show(i);
+  }));
+
   if (closeBtn) closeBtn.addEventListener('click', close);
   if (lbPrev)   lbPrev.addEventListener('click', e => { e.stopPropagation(); show(cur - 1); });
   if (lbNext)   lbNext.addEventListener('click', e => { e.stopPropagation(); show(cur + 1); });
