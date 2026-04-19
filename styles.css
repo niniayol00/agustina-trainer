@@ -524,8 +524,8 @@ textarea.form-input { resize: vertical; }
   .trainer-carousel .carousel-next { right: -16px; }
   .stats-inner { flex-wrap: wrap; }
   .stat-col { flex-basis: 50%; border-right: none; border-bottom: 1px solid var(--border); }
-  .gallery-track-wrap { padding-left: 0; }
-  .gallery-slide img { width: calc(100vw - 48px); height: 380px; }
+  .gallery-track-wrap { padding-left: 24px; overflow: hidden; }
+  .gallery-slide img { width: calc(100vw - 64px); height: 380px; }
   .gallery-controls { padding: 0 24px 60px; }
   .svc-item, .svc-item.reverse { flex-direction: column; gap: 40px; }
   .svc-photo img { width: 100%; height: 300px; }
