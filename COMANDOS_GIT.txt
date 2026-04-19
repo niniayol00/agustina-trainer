@@ -1,43 +1,57 @@
 ====================================================
-  COMANDOS PARA ACTUALIZAR EL SITIO DE AGUSTINA
+  CÓMO ACTUALIZAR EL SITIO DE AGUSTINA
 ====================================================
 
-Cada vez que haya cambios, abrí el cmd y ejecutá
-estos comandos UNO POR UNO:
+MÉTODO: GitHub Desktop (el más fácil, sin comandos)
 
-1) Entrar a la carpeta:
-   D:
-   cd soledad\Documents\agu mardel\01_AGUSTINA_Trainer
+1) Abrí GitHub Desktop
+   (si no está instalado: desktop.github.com)
 
-2) Agregar los cambios:
-   git add .
+2) Asegurate que el repo sea "agustina-trainer"
+   (se ve arriba a la izquierda)
 
-3) Guardar los cambios (cambiá el mensaje si querés):
-   git commit -m "actualización sitio"
+3) Vas a ver los archivos modificados en la columna
+   izquierda
 
-4) Subir a GitHub (con el token):
-   git push https://niniayol00:TU_TOKEN@github.com/niniayol00/agustina-trainer.git master
+4) Abajo a la izquierda escribí un mensaje en
+   "Summary", por ejemplo: "actualización sitio"
 
-   Reemplazá TU_TOKEN por el token que generaste en GitHub
-   (empieza con ghp_...)
+5) Hacé clic en "Commit to master"
 
-====================================================
-  TOKEN ACTUAL (vence ~19 de mayo 2026)
-====================================================
+6) Arriba hacé clic en "Push origin"
+   (o "Publish branch" si es la primera vez)
 
-   Guardá tu token acá (reemplazá este texto):
-   ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-   Cuando venza, generá uno nuevo en:
-   github.com → avatar → Settings → Developer settings
-   → Personal access tokens → Tokens (classic)
-   → Generate new token (classic)
-   → Tildá "repo" → Generate token
+7) Esperá 2-3 minutos y el sitio se actualiza solo
 
 ====================================================
   LINK DEL SITIO PUBLICADO
 ====================================================
 
    https://niniayol00.github.io/agustina-trainer/
+
+====================================================
+  CUENTA GITHUB
+====================================================
+
+   Usuario: niniayol00
+   Email:   soledad.casentini@gmail.com
+
+====================================================
+  SI ALGO FALLA CON GITHUB DESKTOP
+====================================================
+
+   Abrí cmd y ejecutá uno por uno:
+
+   D:
+   cd soledad\Documents\agu mardel\01_AGUSTINA_Trainer
+   git add .
+   git commit -m "actualización sitio"
+   git push https://niniayol00:TU_TOKEN@github.com/niniayol00/agustina-trainer.git master
+
+   Para obtener un nuevo token:
+   github.com → avatar → Settings → Developer settings
+   → Personal access tokens → Tokens (classic)
+   → Generate new token (classic) → tildá "repo"
+   → Generate token → copiá el token (empieza con ghp_)
 
 ====================================================
