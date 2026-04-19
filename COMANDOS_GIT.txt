@@ -25,7 +25,8 @@ estos comandos UNO POR UNO:
   TOKEN ACTUAL (vence ~19 de mayo 2026)
 ====================================================
 
-   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
+   Guardá tu token acá (reemplazá este texto):
+   ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
    Cuando venza, generá uno nuevo en:
    github.com → avatar → Settings → Developer settings
