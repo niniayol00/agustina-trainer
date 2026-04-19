@@ -21,7 +21,18 @@ MÉTODO: GitHub Desktop (el más fácil, sin comandos)
 6) Arriba hacé clic en "Push origin"
    (o "Publish branch" si es la primera vez)
 
+<<<<<<< HEAD
 7) Esperá 2-3 minutos y el sitio se actualiza solo
+=======
+   Guardá tu token acá (reemplazá este texto):
+   ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+   Cuando venza, generá uno nuevo en:
+   github.com → avatar → Settings → Developer settings
+   → Personal access tokens → Tokens (classic)
+   → Generate new token (classic)
+   → Tildá "repo" → Generate token
+>>>>>>> origin/master
 
 ====================================================
   LINK DEL SITIO PUBLICADO
