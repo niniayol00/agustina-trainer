@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://agustinacasentini.com/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/images/hero-agustina.webp</image:loc>
+      <image:title>Agustina Casentini — Entrenadora Personal en Mar del Plata</image:title>
+      <image:caption>Entrenamiento personalizado online y presencial</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/images/og-hero.webp</image:loc>
+      <image:title>Entrenamiento personalizado con Agustina Casentini</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/entrenadora-personal.webp</image:loc>
+      <image:title>Entrenadora personal en Mar del Plata</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/full-body-cardio-online.webp</image:loc>
+      <image:title>Clases full body cardio 100% online en vivo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/planes-online.webp</image:loc>
+      <image:title>Planes de entrenamiento online personalizados</image:title>
+    </image:image>
   </url>
 </urlset>

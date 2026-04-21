@@ -4,8 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entrenadora Personal en Mar del Plata | Agustina Casentini</title>
-  <meta name="description" content="Entrenamiento personalizado en Mar del Plata. Planes online y presenciales de Full Body, Funcional y Stretching.">
+  <meta name="description" content="Entrenadora personal certificada en Mar del Plata. Planes de entrenamiento online y presenciales: Full Body Cardio, funcional, planificaciones mensuales con seguimiento. Primera consulta sin cargo.">
+  <meta name="keywords" content="entrenadora personal mar del plata, entrenamiento personalizado mar del plata, entrenamiento funcional mar del plata, planes de entrenamiento online argentina, personal trainer mar del plata, full body cardio online, agustina casentini">
+  <meta name="author" content="Agustina Casentini">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google-site-verification" content="e4LwF3l0SNJ6_U4XTxL8eWY_zJV-6FTjNhSnKb_Ndpc">
+
+  <!-- Geo tags (ayuda a SEO local en Bing/otros buscadores) -->
+  <meta name="geo.region" content="AR-B">
+  <meta name="geo.placename" content="Mar del Plata">
+  <meta name="geo.position" content="-38.0055;-57.5426">
+  <meta name="ICBM" content="-38.0055, -57.5426">
+
   <link rel="canonical" href="https://agustinacasentini.com/">
+  <meta name="color-scheme" content="light">
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
@@ -21,10 +34,13 @@
   <meta name="twitter:description" content="Entrenamiento personalizado en Mar del Plata. Planes online y presenciales de Full Body, Funcional y Stretching.">
   <meta name="twitter:image"       content="https://agustinacasentini.com/images/og-hero.webp">
 
-  <!-- PWA -->
+  <!-- PWA / Icons -->
   <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#5CB800">
+  <meta name="application-name" content="Agustina Casentini — Entrenadora Personal">
+  <meta name="apple-mobile-web-app-title" content="AC Trainer">
 
   <!-- Preload hero -->
   <link rel="preload" as="image" href="./images/hero-agustina.webp" type="image/webp" fetchpriority="high">
@@ -37,18 +53,139 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Structured Data: ProfessionalService -->
+  <!-- Structured Data: @graph (LocalBusiness + Person + WebSite + Breadcrumb) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Agustina Casentini — Entrenadora Personal",
-    "description": "Entrenamiento personalizado online y presencial en Mar del Plata. Full Body, Funcional y Stretching.",
-    "url": "https://agustinacasentini.com/",
-    "telephone": "+5491121918674",
-    "areaServed": ["Mar del Plata", "Argentina"],
-    "priceRange": "$$",
-    "sameAs": ["https://www.instagram.com/professora.agustina/"]
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "HealthAndBeautyBusiness", "SportsActivityLocation"],
+        "@id": "https://agustinacasentini.com/#business",
+        "name": "Agustina Casentini — Entrenadora Personal",
+        "alternateName": "AC Trainer",
+        "description": "Entrenamiento personalizado online y presencial en Mar del Plata. Full Body Cardio, funcional, planificaciones mensuales con seguimiento.",
+        "url": "https://agustinacasentini.com/",
+        "telephone": "+5491121918674",
+        "image": "https://agustinacasentini.com/images/og-hero.webp",
+        "logo": "https://agustinacasentini.com/icons/icon-512.png",
+        "priceRange": "$$",
+        "currenciesAccepted": "ARS, USD",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mar del Plata",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -38.0055,
+          "longitude": -57.5426
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Mar del Plata" },
+          { "@type": "Country", "name": "Argentina" },
+          { "@type": "Place", "name": "Online (global)" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ],
+        "founder": { "@id": "https://agustinacasentini.com/#agustina" },
+        "employee": { "@id": "https://agustinacasentini.com/#agustina" },
+        "sameAs": [
+          "https://www.instagram.com/professora.agustina/",
+          "https://www.youtube.com/@professora.agustina"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Planes de entrenamiento",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Full Body Cardio 100% Online",
+                "description": "Sesiones en vivo por videollamada, entrenamiento integral de todo el cuerpo, días y horarios flexibles.",
+                "serviceType": "Entrenamiento online en vivo",
+                "areaServed": "Global"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Planificaciones de entrenamiento mensuales",
+                "description": "Planes personalizados con app, seguimiento semanal y ajustes según progreso.",
+                "serviceType": "Plan de entrenamiento digital",
+                "areaServed": "Global"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Entrenamiento presencial en Mar del Plata",
+                "description": "Entrenamiento uno a uno en tu domicilio, gimnasio o espacio verde. Corrección técnica en tiempo real.",
+                "serviceType": "Entrenamiento personal presencial",
+                "areaServed": { "@type": "City", "name": "Mar del Plata" }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://agustinacasentini.com/#agustina",
+        "name": "Agustina Casentini",
+        "jobTitle": "Profesora de Educación Física y Entrenadora Personal",
+        "description": "Profesora de Educación Física especializada en entrenamiento funcional, con más de 15 años de experiencia acompañando procesos de transformación física.",
+        "image": "https://agustinacasentini.com/images/hero-agustina.webp",
+        "url": "https://agustinacasentini.com/",
+        "worksFor": { "@id": "https://agustinacasentini.com/#business" },
+        "knowsAbout": [
+          "Entrenamiento funcional",
+          "Full Body Cardio",
+          "Planificación de entrenamiento",
+          "Stretching y movilidad",
+          "Entrenamiento personalizado"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/professora.agustina/",
+          "https://www.youtube.com/@professora.agustina"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://agustinacasentini.com/#website",
+        "url": "https://agustinacasentini.com/",
+        "name": "Agustina Casentini — Entrenadora Personal",
+        "description": "Entrenamiento personalizado online y presencial en Mar del Plata.",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://agustinacasentini.com/#business" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://agustinacasentini.com/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://agustinacasentini.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Sobre mí", "item": "https://agustinacasentini.com/#sobre-mi" },
+          { "@type": "ListItem", "position": 3, "name": "Servicios", "item": "https://agustinacasentini.com/#servicios" },
+          { "@type": "ListItem", "position": 4, "name": "Preguntas frecuentes", "item": "https://agustinacasentini.com/#faq" },
+          { "@type": "ListItem", "position": 5, "name": "Contacto", "item": "https://agustinacasentini.com/#contacto" }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -146,11 +283,11 @@
         <span class="hero-tag-dot"></span>
         <span>Profesora de Educación Física · @professora.agustina</span>
       </div>
-      <h1 class="hero-h1 fi fi-d1">PONTE FIT.</h1>
+      <h1 class="hero-h1 fi fi-d1">PONTE FIT.<span class="sr-only"> Entrenadora Personal en Mar del Plata — entrenamiento personalizado online y presencial.</span></h1>
       <p class="hero-sub fi fi-d2">Tu mejor versión</p>
     </div>
     <div class="hero-right fi fi-d3">
-      <p class="hero-desc">Transformá tu cuerpo y mente con planes personalizados, online y/o presenciales.</p>
+      <p class="hero-desc">Transformá tu cuerpo y mente con planes personalizados de entrenamiento en Mar del Plata, online o presenciales.</p>
       <a href="#contacto" class="btn-white">
         Empezá tu camino
         <span class="btn-circle">
@@ -164,8 +301,8 @@
 <!-- ══════════════════════════════════ ABOUT ══ -->
 <section class="about-section" id="sobre-mi">
   <div class="about-inner">
-    <h2 class="about-heading fi fi-d1">Entrenadora personal.</h2>
-    <p class="about-desc fi fi-d2">Soy profesora de Educación Física y entrenadora personal especializada en entrenamiento funcional. Me apasiona acompañar a cada persona en su proceso de transformación, respetando sus tiempos y potenciando sus capacidades.</p>
+    <h2 class="about-heading fi fi-d1">Entrenadora personal en Mar del Plata.</h2>
+    <p class="about-desc fi fi-d2">Soy Agustina Casentini, profesora de Educación Física y entrenadora personal en Mar del Plata, especializada en entrenamiento funcional. Me apasiona acompañar a cada persona en su proceso de transformación física, respetando sus tiempos y potenciando sus capacidades. Trabajo con planes personalizados online y presenciales, adaptados a tu nivel y objetivos.</p>
 
     <div class="trainer-carousel fi fi-d3">
       <button type="button" class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Anterior">
@@ -669,7 +806,7 @@
     <div class="yt-grid fi fi-d1">
       <a class="yt-card" href="https://www.youtube.com/shorts/eHZim6xB8hA" target="_blank" rel="noopener noreferrer">
         <div class="yt-thumb-wrap">
-          <img src="https://img.youtube.com/vi/eHZim6xB8hA/maxresdefault.jpg" alt="Short Agustina 1" loading="lazy">
+          <img src="https://img.youtube.com/vi/eHZim6xB8hA/maxresdefault.jpg" alt="Video corto: rutina de entrenamiento funcional con Agustina Casentini" loading="lazy" width="270" height="480">
           <div class="yt-play">
             <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
           </div>
@@ -677,7 +814,7 @@
       </a>
       <a class="yt-card" href="https://www.youtube.com/shorts/x82YMpaIYLs" target="_blank" rel="noopener noreferrer">
         <div class="yt-thumb-wrap">
-          <img src="https://img.youtube.com/vi/x82YMpaIYLs/maxresdefault.jpg" alt="Short Agustina 2" loading="lazy">
+          <img src="https://img.youtube.com/vi/x82YMpaIYLs/maxresdefault.jpg" alt="Video corto: ejercicios de full body cardio con Agustina Casentini" loading="lazy" width="270" height="480">
           <div class="yt-play">
             <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
           </div>
@@ -685,7 +822,7 @@
       </a>
       <a class="yt-card" href="https://www.youtube.com/shorts/6-Ja0VOMmgk" target="_blank" rel="noopener noreferrer">
         <div class="yt-thumb-wrap">
-          <img src="https://img.youtube.com/vi/6-Ja0VOMmgk/maxresdefault.jpg" alt="Short Agustina 3" loading="lazy">
+          <img src="https://img.youtube.com/vi/6-Ja0VOMmgk/maxresdefault.jpg" alt="Video corto: tips de entrenamiento personalizado con Agustina Casentini" loading="lazy" width="270" height="480">
           <div class="yt-play">
             <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
           </div>

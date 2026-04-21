@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /node_modules/
+Disallow: /tools/
+Disallow: /temporary screenshots/
+Disallow: /brand_assets/
+
+# Permitir explícitamente a buscadores principales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /fotos/
+
+User-agent: Bingbot
+Allow: /
 
 Sitemap: https://agustinacasentini.com/sitemap.xml
