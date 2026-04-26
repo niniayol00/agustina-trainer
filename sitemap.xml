@@ -3,29 +3,70 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://agustinacasentini.com/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://agustinacasentini.com/images/hero-agustina.webp</image:loc>
       <image:title>Agustina Casentini — Entrenadora Personal en Mar del Plata</image:title>
-      <image:caption>Entrenamiento personalizado online y presencial</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://agustinacasentini.com/images/og-hero.webp</image:loc>
-      <image:title>Entrenamiento personalizado con Agustina Casentini</image:title>
+      <image:caption>Entrenadora personal con 15 años de experiencia en Mar del Plata</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/entrenadora-personal.webp</image:loc>
-      <image:title>Entrenadora personal en Mar del Plata</image:title>
+      <image:title>Entrenadora personal en Mar del Plata — Agustina Casentini</image:title>
+      <image:caption>Agustina Casentini, profesora de Educación Física y entrenadora personal en Mar del Plata</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/full-body-cardio-online.webp</image:loc>
-      <image:title>Clases full body cardio 100% online en vivo</image:title>
+      <image:title>Clases Full Body Cardio 100% online en vivo</image:title>
+      <image:caption>Clases de Full Body Cardio online en vivo con Agustina Casentini</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/planes-online.webp</image:loc>
       <image:title>Planes de entrenamiento online personalizados</image:title>
+      <image:caption>Planificaciones de entrenamiento mensuales con seguimiento semanal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/foto-testimonio-dolores.webp</image:loc>
+      <image:title>Full Body Cardio 100% Online — entrenamiento en vivo</image:title>
+      <image:caption>Entrenamiento Full Body Cardio online con Agustina Casentini</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/foto-con-herramienta.webp</image:loc>
+      <image:title>Plan de entrenamiento Digital Mensual</image:title>
+      <image:caption>Plan de entrenamiento digital mensual personalizado con app y seguimiento semanal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/preguntas-tengo-respuestas.webp</image:loc>
+      <image:title>Preguntas frecuentes — Entrenadora personal Mar del Plata</image:title>
+      <image:caption>Agustina Casentini responde preguntas sobre entrenamiento personal en Mar del Plata</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/foto-testimonio-claire.webp</image:loc>
+      <image:title>Testimonio Claire Chavériat — entrenamiento online con Agustina Casentini</image:title>
+      <image:caption>Reseña Google 5 estrellas de alumna de Agustina Casentini</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/foto-testimonio-sebastian.webp</image:loc>
+      <image:title>Testimonio Sebastian Scorza — clases Full Body Cardio online</image:title>
+      <image:caption>Reseña Google 5 estrellas de alumno de Agustina Casentini</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/foto-gretel.webp</image:loc>
+      <image:title>Testimonio Gretel — entrenamiento con Agustina Casentini</image:title>
+      <image:caption>Reseña Google 5 estrellas — excelente profesional, muy dedicada</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/carrete-foto-segunda.webp</image:loc>
+      <image:title>Sesión de entrenamiento con Agustina Casentini en Mar del Plata</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/carrete-foto-4.webp</image:loc>
+      <image:title>Entrenamiento personalizado con Agustina Casentini</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://agustinacasentini.com/fotos/optimizadas/webp/carrete-foto-anteultima.webp</image:loc>
+      <image:title>Entrenadora personal en acción — Mar del Plata</image:title>
     </image:image>
   </url>
 </urlset>
