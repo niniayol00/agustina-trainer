@@ -857,15 +857,18 @@
     <div class="contact-left fi">
       <h2 class="contact-heading"><span class="grad">Escribime</span> para consejos, consultas y planes.</h2>
       <p class="contact-sub">Mandame tu email y te cuento todo sobre cómo trabajamos juntos.</p>
-      <div class="newsletter-row">
-        <input type="email" class="newsletter-input" placeholder="tu@email.com" aria-label="Tu email">
-        <a href="https://wa.me/5491121918674" target="_blank" rel="noopener noreferrer" class="btn-pink">
-          Escribir
+      <form class="newsletter-row" id="newsletterForm">
+        <input type="hidden" name="access_key" value="6f1406ab-35c0-49eb-991e-295291e18077">
+        <input type="hidden" name="subject" value="Nuevo email desde agustinacasentini.com">
+        <input type="hidden" name="from_name" value="Sitio Agustina Casentini">
+        <input type="email" class="newsletter-input" name="email" placeholder="tu@email.com" aria-label="Tu email" required>
+        <button type="submit" id="newsletterBtn" class="btn-pink">
+          Enviar
           <span class="btn-circle">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
           </span>
-        </a>
-      </div>
+        </button>
+      </form>
       <p class="contact-wa">O escribime directamente al <a href="https://wa.me/5491121918674" class="contact-wa-link">WhatsApp</a></p>
     </div>
 

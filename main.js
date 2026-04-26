@@ -217,6 +217,37 @@ if (nav) {
   });
 })();
 
+// ── Newsletter form ───────────────────────────────────
+(function () {
+  const form = document.getElementById('newsletterForm');
+  const btn  = document.getElementById('newsletterBtn');
+  if (!form || !btn) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    btn.textContent = 'Enviando…';
+    btn.disabled    = true;
+
+    try {
+      const res  = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      const data = await res.json();
+      if (data.success) {
+        btn.textContent = '¡Enviado! ✓';
+        form.reset();
+        setTimeout(() => { btn.textContent = 'Enviar'; btn.disabled = false; }, 4000);
+      } else throw new Error();
+    } catch {
+      btn.textContent = 'Error. Intentá de nuevo.';
+      btn.disabled    = false;
+      setTimeout(() => { btn.textContent = 'Enviar'; }, 4000);
+    }
+  });
+})();
+
 // ── Contact form ─────────────────────────────────────
 (function () {
   const form    = document.getElementById('contactForm');
