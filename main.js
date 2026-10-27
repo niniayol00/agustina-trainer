@@ -248,40 +248,6 @@ if (nav) {
   });
 })();
 
-// ── Contact form ─────────────────────────────────────
-(function () {
-  const form    = document.getElementById('contactForm');
-  const submitBtn = document.getElementById('submitBtn');
-  if (!form || !submitBtn) return;
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    submitBtn.textContent = 'Enviando…';
-    submitBtn.disabled    = true;
-    submitBtn.style.opacity = '0.7';
-
-    try {
-      const res  = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(Object.fromEntries(new FormData(form))),
-      });
-      const data = await res.json();
-      if (data.success) {
-        submitBtn.textContent   = '¡Enviado! Te respondo pronto ✓';
-        submitBtn.style.opacity = '1';
-        form.reset();
-        setTimeout(() => { submitBtn.textContent = 'Enviar consulta'; submitBtn.disabled = false; }, 4000);
-      } else throw new Error('form_error');
-    } catch {
-      submitBtn.textContent   = 'Error al enviar. Intentá de nuevo.';
-      submitBtn.style.opacity = '1';
-      submitBtn.disabled      = false;
-      setTimeout(() => { submitBtn.textContent = 'Enviar consulta'; }, 4000);
-    }
-  });
-})();
-
 // ── Lightbox (context-aware: carrusel o galería) ──────
 (function () {
   const lb      = document.getElementById('lightbox');
